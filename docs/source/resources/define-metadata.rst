@@ -1925,6 +1925,9 @@ variables are booleans.
    * - s390x
      - True if the platform is Linux and the Python architecture
        is s390x.
+   * - riscv64
+     - True if the platform is Linux and the Python architecture
+     - is riscv64.
    * - osx
      - True if the platform is macOS.
    * - arm64

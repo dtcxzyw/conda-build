@@ -188,6 +188,7 @@ def update_index_file(temp_dir, target_platform, dependencies, verbose):
         "linux-armv6l",
         "linux-armv7l",
         "linux-aarch64",
+        "linux-riscv64",
     ]
 
     if target_platform in other_platforms:
@@ -845,6 +846,7 @@ def conda_convert(
             "linux-armv6l",
             "linux-armv7l",
             "linux-aarch64",
+            "linux-riscv64",
             "win-32",
             "win-64",
             "win-arm64",

@@ -553,6 +553,7 @@ def cdt(package_name, config, permit_undefined_jinja=False):
                             "armv6", "armv7a", "aarch32", "aarch64",
                             "powerpc", "powerpc64",
                             "s390", "s390x",
+                            "riscv64",
         "cpu_isa": "nocona", "armv8.1-a", "armv8.3-a",
         # "?" because the vfpu is specified by cpu_architecture + cpu_isa + rules.
         "vfpu": "?",
@@ -578,7 +579,7 @@ def cdt(package_name, config, permit_undefined_jinja=False):
 
     cdt_name = "cos6"
     arch = config.host_arch or config.arch
-    if arch == "ppc64le" or arch == "aarch64" or arch == "ppc64" or arch == "s390x":
+    if arch == "ppc64le" or arch == "aarch64" or arch == "ppc64" or arch == "s390x" or arch == "riscv64":
         cdt_name = "cos7"
         cdt_arch = arch
     else:
